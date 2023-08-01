@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.user-options {
+    color: #A46E61;
+    height: 700;
+    width: 500;
+}
+
+.top-background {
+    background-image: url('boho.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
