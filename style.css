@@ -3,16 +3,45 @@
     padding: 0;
 }
 
-.user-options {
-    color: #A46E61;
-    height: 700;
-    width: 500;
-}
-
 .top-background {
     background-image: url('boho.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+}
+
+.user-options {
+    background-color: #A46E61;
+    opacity: 80%;
+    height: 600px;
+    width: 500px;
+    margin: 0;
+}
+
+.info-block {
+    background-color: #A46E61;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.image, img {
+    height: 400px;
+    width: 430px;
+    grid-column: 1 / 2;
+}
+
+.description {
+    grid-column: 2 / 3;
 }
