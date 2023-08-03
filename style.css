@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+#name {
+    text-decoration: none;
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 35px;
+    color: #A46E61;
+    position: absolute;
+    margin-left: 10px;
+}
+
 .top-background {
     background-image: url('boho.png');
     background-repeat: no-repeat; 
@@ -27,21 +36,52 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    align-content: center;
+    margin-top: 50px;
 }
 
-.image, img {
-    height: 400px;
-    width: 430px;
+img:not(.logo) {
+    max-height: 400px;
+    max-width: 430px;
     grid-column: 1 / 2;
+    margin-right: 10px;
 }
 
 .description {
     grid-column: 2 / 3;
+    height: 400px;
+    width: 430px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #F1F2F2;
+}
+
+.footer {
+    background-color: #F1F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about, #address {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #A46E61;
+}
+
+.logo img {
+    height: 140px;
+    width: 150px;
 }
