@@ -60,13 +60,13 @@ body {
     color: var(--accent-color);
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    padding-top: 30vh;
 }
 
 .distance-info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 50px;
 }
 
 .chicago {
@@ -95,8 +95,9 @@ body {
     color: var(--accent-color);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    padding-top: 30px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20vh;
 }
 
 .text1, .text3 {
@@ -105,9 +106,9 @@ body {
     flex-wrap: wrap;
     justify-content: right;
     align-content: center;
-    max-width: 600px;
     padding-left: 20%;
     padding-right: 10%;
+    padding-top: 30vh;
 }
 
 .img-container1, .img-container3 {
@@ -116,7 +117,8 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: left;
-    padding-right: 30px;
+    padding-right: 10%;
+    padding-top: 30vh;
 }
 
 .text2 {
@@ -125,9 +127,9 @@ body {
     flex-wrap: wrap;
     justify-content: right;
     align-content: center;
-    max-width: 600px;
     padding-right: 20%;
     padding-left: 10%;
+    padding-top: 30vh;
 }
 
 .img-container2 {
@@ -136,7 +138,8 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: right;
-    padding-left: 30px;
+    padding-left: 10%;
+    padding-top: 30vh;
 }
 
 .footer {
@@ -162,7 +165,7 @@ body {
 }
 
 .social-media {
-    width: 100%;
+    
 }
 
 #social-media {
