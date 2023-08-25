@@ -57,6 +57,45 @@
     color: var(--color4);
 }
 
+.add-email {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+    background-color: var(--color2);
+    opacity: 0.9;
+    display: grid;
+    place-items: center;
+}
+
+#first-name {
+    grid-row: 1;
+    height: 30px;
+    width: 200px;
+}
+
+#last-name {
+    grid-row: 2;
+    height: 30px;
+    width: 200px;
+}
+
+#email-name {
+    grid-row: 3;
+    height: 30px;
+    width: 200px;
+}
+
+#add-email-button {
+    grid-row: 4;
+    height: 30px;
+    width: 200px;
+}
+
 .booking-bar {
     position: fixed;
     bottom: 0px;
