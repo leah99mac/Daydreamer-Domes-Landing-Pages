@@ -446,6 +446,135 @@
     }
 }
 
+@media (max-width: 600px) {
+    .add-email {
+        position: fixed;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 300px;
+        background-color: var(--color2);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 9fr 9fr 9fr 9fr;
+        opacity: 0.9;
+        border-radius: 10px;
+    }
+    
+    #cancel-button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color: var(--color1);
+        height: 35px;
+        width: 30px;
+    }
+    
+    #cancel-button:hover {
+        color: var(--color4);
+    }
+    
+    .cancel-button-container {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .input-label {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: var(--accent-font);
+        font-size: 20px;
+        color: var(--color1);
+        padding-right: 10px;
+    }
+    
+    .input-box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .input-box {
+        font-family: var(--accent-font);
+        font-size: 20px;
+        padding: 10px;
+        height: 40px;
+        width: 80%;
+        background-color: var(--color1);
+        color: var(--color2);
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    
+    .input-box:focus {
+        background-color: var(--color4);
+    }
+    
+    .first-name-label {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .first-name-input {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .last-name-label {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .last-name-input {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .email-label {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .email-input {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    .add-email-button-container {
+        grid-column: 1 / 3;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #add-email-button {
+        transition-duration: 0.4s;
+        background-color: var(--color1);
+        color: var(--color2);
+        border: none;
+        border-radius: 5px;
+        font-family: var(--accent-font);
+        font-size: 20px;
+        padding: 10px;
+        width: 250px;
+    }
+    
+    #add-email-button:hover {
+        background-color: var(--color4);
+        color: var(--color2);
+    }
+}
+
 @media (max-width: 410px) {
     #left-img {
         max-width: 260px;

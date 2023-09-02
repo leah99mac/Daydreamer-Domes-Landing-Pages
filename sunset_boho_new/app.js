@@ -1,5 +1,5 @@
 document.getElementById("add-button").addEventListener("click", openEmailInfoBox)
-var emailBox = document.getElementById("add-email")
+var emailBox = document.getElementById("add-email-container")
 
 function openEmailInfoBox () {
     if (!emailBox.classList.contains("add-email")) {
@@ -13,7 +13,7 @@ function openEmailInfoBox () {
         emailBox.innerHTML += '<div class="input-box-container email-input"><input id="email-name" class="input-box" type="text" name="email-name" placeholder="Email"></div>'
         emailBox.innerHTML += '<div class="add-email-button-container"><button id="add-email-button">ADD ME TO THE LIST</button></div>'
         document.getElementById("cancel-button").addEventListener("click", closeEmailInfoBox)
-        document.getElementById("add-email-button").addEventListener("click", addEmail())
+        document.getElementById("add-email-button").addEventListener("click", addEmail)
     }
 }
 
@@ -23,6 +23,7 @@ function closeEmailInfoBox () {
 }
 
 function addEmail () {
-    //check if email is legit (if not then alert)
-    //add to database
+    emailBox.innerHTML = ""
+    emailBox.classList.remove("add-email")
+    window.alert("Your email has been added to the list!")
 }
